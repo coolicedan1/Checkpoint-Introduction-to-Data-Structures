@@ -1,0 +1,28 @@
+ALGORITHM distintsum
+
+// PROBLEM ONE RETURN THE SUM OF THE DISTINCT NUMBER IN THE ARRAY.
+VAR
+  var sum = 0
+  var arr = [3,1,7,9,3,4,1,9,7]
+  var unique = []
+BEGIN
+  FOR i FROM 0 TO 8 STEP 1  DO
+    (i = 0; i < arr.length; i++)
+    FOR j FROM 0 TO 8 STEP 1  DO
+      (j = 0; j < i; j++)
+      IF (arr[i] == arr[j] && i != j) THEN
+        break
+        IF (arr[j] == 0) THEN
+          unique = arr[j]
+        END_IF
+      END_IF
+    END_FOR
+  END_FOR
+
+  FOR k FROM 0 TO 8 STEP 1  DO
+    (u = 0; u < unique.length; u++)
+    sum = sum + unique[k]
+  END_FOR
+
+  return sum
+END

@@ -1,0 +1,23 @@
+ALGORITHM Dot Product.
+
+// Problem Two which calculates in the variable ps, the dot(scalar) product of v1 and v2 (v1 and v2 are vectors of IR).
+VAR
+  var vectors = [[7, 1, 1],[6, 0, 2], [5, 7, 0], [3, 1, 2], [2, 3 ,8], [0, 0, 0]]
+  var result = 0
+  var vector1, vector2
+BEGIN
+  FOR i FROM 0 TO i < vector1.length STEP i++  DO
+    result += vector1[1] * vector2[i]
+  END_FOR
+  return result
+END
+
+// Problem Two an algorithm which determines whether two vectors of given IR are orthogonal, by calling the procedure defined in the previous question
+
+FOR i FROM 0 TO i < vectors.length STEP i++  DO
+  FOR j FROM i + 1 TO j < vectors.length STEP j++  DO
+    IF (Dotproduct (vectors[i] , vectors[j] <> 0) THEN
+        vectors[i] && vectors[j] = 0 ( are orthogonal)
+    END_IF
+  END_FOR
+END_FOR
